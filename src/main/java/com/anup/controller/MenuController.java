@@ -39,7 +39,7 @@ public class MenuController {
     }
 
     @RequestMapping("/apptList/viewAppt/{appt_nbr}")
-    public String viewAppt(@PathVariable String appt_nbr, Model model) throws IOException {
+    public String viewAppt(@PathVariable int appt_nbr, Model model) throws IOException {
         Appt appt = apptDao.getApptById(appt_nbr);
         model.addAttribute(appt);
 
@@ -47,7 +47,7 @@ public class MenuController {
     }
 
     @RequestMapping("/apptList/editAppt/{id}")
-    public String editProduct(@PathVariable("id") String id,Model model){
+    public String editProduct(@PathVariable("id") int id,Model model){
         Appt appt = apptDao.getApptById(id);
 
         model.addAttribute(appt);
@@ -79,6 +79,6 @@ public class MenuController {
 
         apptDao.addAppt(appt);
 
-        return "redirect:/apptList";
+        return "redirect:/UserInterface";
     }
 }

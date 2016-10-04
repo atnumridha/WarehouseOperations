@@ -14,10 +14,10 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="<c:url value="resources/dist/css/AdminLTE.min.css"/>">
+    <link rel="stylesheet" href="<c:url value="resources/bootstrap/css/AdminLTE.min.css"/>">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="<c:url value="resources/dist/css/skins/_all-skins.min.css"/>">
+    <link rel="stylesheet" href="<c:url value="resources/bootstrap/css/skins/_all-skins.min.css"/>">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,8 +27,7 @@
     <![endif]-->
 </head>
 <!-- ADD THE CLASS layout-boxed TO GET A Main Menu -->
-<body class="hold-transition skin-blue layout-boxed sidebar-mini">
-<!-- Site wrapper -->
+<body class="hold-transition skin-blue layout-boxed sidebar-mini"><!-- Site wrapper -->
 <div class="wrapper">
 
     <header class="main-header">
@@ -492,16 +491,16 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 2.2.3 -->
-<script src="<c:url value="resources/plugins/jQuery/jquery-2.2.3.min.js"/>"></script>
+<script src="<c:url value="resources/bootstrap/jQuery/jquery-2.2.3.min.js"/>"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="<c:url value="resources/bootstrap/js/bootstrap.min.js"/>"></script>
 <!-- SlimScroll -->
-<script src="<c:url value="resources/plugins/slimScroll/jquery.slimscroll.min.js"/>"></script>
+<script src="<c:url value="resources/bootstrap/slimScroll/jquery.slimscroll.min.js"/>"></script>
 <!-- FastClick -->
-<script src="<c:url value="resources/plugins/fastclick/fastclick.js"/>"></script>
+<script src="<c:url value="resources/bootstrap/fastclick/fastclick.js"/>"></script>
 <!-- AdminLTE App -->
-<script src="<c:url value="resources/dist/js/app.min.js"/>"></script>
+<script src="<c:url value="resources/bootstrap/js/app.min.js"/>"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="<c:url value="resources/dist/js/demo.js"/>"></script>
+<script src="<c:url value="resources/bootstrap/js/demo.js"/>"></script>
 </body>
 </html>

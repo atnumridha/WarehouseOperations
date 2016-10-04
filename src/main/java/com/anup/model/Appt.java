@@ -1,26 +1,34 @@
 package com.anup.model;
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.hibernate.validator.xml.FieldType;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;
-
+import java.io.Serializable;
+import java.util.List;
 /**
  * Created by Anup on 30-07-2016.
  */
 
 @Entity
-@Table(name="Appt")
 public class Appt {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int appt_nbr;
 
+    private static final long serialVersionUID = -3532377236419382983L;
+
+    @Id
+    @Column(name="appt_nbr")
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private int appt_nbr;
     private int po_nbr;
     private String appt_status;
     private String door_id;
     private String appt_type;
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
 
     public int getAppt_nbr() {
         return appt_nbr;

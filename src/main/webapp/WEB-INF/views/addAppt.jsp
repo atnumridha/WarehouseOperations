@@ -2,26 +2,29 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
-    <title>Schedule Appointment</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WarehouseOperations | MainScreen </title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="<c:url value="resources/bootstrap/css/bootstrap.min.css"/>">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="<c:url value="resources/bootstrap/css/AdminLTE.min.css"/>">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="<c:url value="resources/bootstrap/css/skins/_all-skins.min.css"/>">
 
-    <!-- Bootstrap core CSS -->
-    <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
-
-    <!-- MaCarouselin CSS -->
-    <link href="<c:url value="/resources/css/carousel.css" />" rel="stylesheet">
-
-    <!-- Main CSS -->
-    <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
-
-
-    <link href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css" rel="stylesheet">
-
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="<c:url value="/resources/js/jquery.min.js" />"<\/script>')</script>
-    <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
-
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 <!-- Content Wrapper. Contains page content -->
@@ -65,7 +68,21 @@
             <form:input path="door_id" id="door_id" class="form-Control"/>
         </div>
         <input type="submit" value="Schedule" class="btn btn-success">
-        <a href="<c:url value="/apptList"/>" class="btn btn-warning">Cancel</a>
+        <a href="<c:url value="/UserInterface"/>" class="btn btn-warning">Cancel</a>
         </form:form>
+
+
+        <!-- jQuery 2.2.3 -->
+        <script src="<c:url value="resources/bootstrap/jQuery/jquery-2.2.3.min.js"/>"></script>
+        <!-- Bootstrap 3.3.6 -->
+        <script src="<c:url value="resources/bootstrap/js/bootstrap.min.js"/>"></script>
+        <!-- SlimScroll -->
+        <script src="<c:url value="resources/bootstrap/slimScroll/jquery.slimscroll.min.js"/>"></script>
+        <!-- FastClick -->
+        <script src="<c:url value="resources/bootstrap/fastclick/fastclick.js"/>"></script>
+        <!-- AdminLTE App -->
+        <script src="<c:url value="resources/bootstrap/js/app.min.js"/>"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="<c:url value="resources/bootstrap/js/demo.js"/>"></script>
 </body>
 </html>

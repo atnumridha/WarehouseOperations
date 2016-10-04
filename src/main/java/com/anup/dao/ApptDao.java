@@ -13,11 +13,11 @@ public interface ApptDao {
 
     void editAppt(Appt appt);
 
-    Appt getApptById(String id);
+    Appt getApptById(int id);
 
     List<Appt> getAllAppt();
 
-    void deleteAppt(String id);
+    void deleteAppt(int id);
 
 
 }

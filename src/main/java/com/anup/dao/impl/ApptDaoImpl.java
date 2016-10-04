@@ -33,7 +33,7 @@ public class ApptDaoImpl implements ApptDao {
     }
 
 
-    public Appt getApptById (String id) {
+    public Appt getApptById (int id) {
         Session session = sessionFactory.getCurrentSession();
         Appt appt = (Appt) session.get(Appt.class,id);
         return appt;
@@ -47,7 +47,7 @@ public class ApptDaoImpl implements ApptDao {
         return appt;
     }
 
-    public void deleteAppt(String id) {
+    public void deleteAppt(int id) {
         Session session = sessionFactory.getCurrentSession();
         session.delete(getApptById(id));
         session.flush();
